@@ -1,17 +1,27 @@
 :root {
-    --light-blue: rgb(0, 234, 255);
+    --pale-blue: rgb(220, 237, 243);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 body {
-    background-color: white;
+    background-color: var(--pale-blue);
     margin: 0px;
 }
 
+/* navigation bar */
 .nav-bar {
     list-style: none;
     text-align: center;
     background-color: black;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
     padding: 0.5rem 0;
+    top: 0;
 }
 
 .nav {
@@ -22,7 +32,7 @@ body {
 
 .nav-link {
     font-size: 1.5rem;
-    color: white;
+    color: var(--pale-blue);
     text-decoration: none;
     list-style: none;
     display: inline-block;
@@ -31,3 +41,59 @@ body {
 .nav-link:hover {
     text-decoration: underline;
 }
+
+/* about */
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.about-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    display:block;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about-para {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.line-break {
+    width: 100%;
+    border-top: 2px solid black;
+    margin: 2rem 0;
+  }
+
