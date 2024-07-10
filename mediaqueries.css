@@ -1,5 +1,18 @@
 @media (max-width: 800px) {
-    .about-top {
+    .about-top, .skills-box {
         flex-direction: column;
+    }
+
+    .skills-box, .skills-icons {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .skills-icons {
+        justify-content: center;
+        align-items: center;
     }
 }
