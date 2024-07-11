@@ -18,8 +18,8 @@ h1 {
     font-size: 4rem;
     text-align: center;
     color: var(--dark-blue);
+    animation: typing 1s forwards;
 }
-
 
 h2 {
     font-size: 3rem;
