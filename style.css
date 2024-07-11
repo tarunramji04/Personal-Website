@@ -1,5 +1,7 @@
 :root {
     --pale-blue: rgb(220, 237, 243);
+    --dark-blue: rgb(17, 0, 254);
+    --dark-orange: #EF8354;
 }
 
 html {
@@ -10,6 +12,26 @@ html {
 body {
     background-color: var(--pale-blue);
     margin: 0px;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.line-break {
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 2rem
 }
 
 /* navigation bar */
@@ -51,9 +73,8 @@ body {
 .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90%;
-    padding: 20px;
+    padding-top: 20px;
     margin-top: 2rem;
 }
 
@@ -70,16 +91,10 @@ body {
     border-radius: 50%;
 }
 
-.name {
-    font-size: 4rem;
-    text-align: center;
-}
-
 .about-para {
     font-size: 1.3rem;
     text-align: center;
 }
-
 
 .logos {
     display: flex;
@@ -92,12 +107,6 @@ body {
     height: 2rem;
 }
 
-.line-break {
-    width: 100%;
-    border-top: 2px solid black;
-    margin-top: 2rem
-}
-
 /* skills */
 .skills-section {
     display: flex;
@@ -108,25 +117,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-}
-
-.skills-box {
-    display: flex;
-    flex-direction: row;
-}
-
-.skills-text {
-    font-size: 2.5rem;
-    flex: 1;
-    text-align: left;
-    margin-top: -2.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-icons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex: 3
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-logo {
@@ -144,3 +144,68 @@ body {
     margin: 10px 20px;
 }
 
+/* experience and projects */
+.experience-section, .projects-section {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-container, .projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.entry {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.entry-name {
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+.company-project-name {
+    margin: 0;
+}
+
+.entry-info {
+    flex: 3;
+    font-size: 1.3rem;
+}
+
+.entry-icon {
+    color: var(--dark-blue);
+}
+
+.title {
+    margin:0
+}
+
+.show-more-button {
+    text-decoration: none;
+    display: block;
+    background-color: var(--dark-orange);
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border: 1px solid #d8a47f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-more-button:hover {
+    background-color: #e57a44;
+}
+
+.show-more-text {
+    display: none;
+    transition: .25s ease;
+}

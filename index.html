@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <script src="functions.js"></script>
+    <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
     <title>Tarun Ramji</title>
 </head>
 
@@ -58,38 +59,134 @@
 
     <section class="skills-section", id="skills">
         <div class="skills-container">
-            <div class="skills-box">
-                <div class="skills-text">
-                    <h2 class="skills-word">Skills</h2>
+            <div class="skills-text">
+                <h2 class="skills-word">Skills</h2>
+            </div>
+            <div class="skills-icons">
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/java.svg" alt="Java" /> Java
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/python.svg" alt="Python" /> Python
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/c.svg" alt="C" /> C
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/html.svg" alt="HTML" /> HTML
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/css.svg" alt="CSS" /> CSS
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/javascript.svg" alt="JavaScript" /> JavaScript
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/react.svg" alt="React" /> React
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/sql-server.svg" alt="SQL Server" /> SQL Server
+                </p>
+                <p class="skill-logo-text">
+                    <img class="skill-logo" src="Images/firebase.svg" alt="Firebase" /> Firebase
+                </p>
+            </div>
+            <div class="line-break"></div>
+        </div>
+    </section>
+
+    <section class="experience-section", id="experience">
+        <div class="experience-container">
+            <div class="experience-box">
+                <h2 class="experience-word">Experience</h2>
+            </div>
+            <div class="entries">
+                <div class ="entry">
+                    <div class="entry-name">
+                        <p class="company-project-name"><strong>State Farm</strong></p>
+                    </div>
+                    <div class="entry-info">
+                        <p class="title"><strong>Software Engineering Intern</strong></p>
+                        <p><i class="fas fa-map-marker-alt entry-icon" ></i>
+                            Bloomington, IL</p>
+                        <p><i class="fas fa-clock entry-icon"></i>
+                            Jun 2024 - Aug 2024</p>
+                        <button class="show-more-button" onClick="displayText(this)">See More</button>
+                        <p class="show-more-text">
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                        </p>
+                    </div>
                 </div>
-                <div class="skills-icons">
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/java.svg" alt="Java" /> Java
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/python.svg" alt="Python" /> Python
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/c.svg" alt="C" /> C
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/html.svg" alt="HTML" /> HTML
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/css.svg" alt="CSS" /> CSS
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/javascript.svg" alt="JavaScript" /> JavaScript
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/react.svg" alt="React" /> React
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/sql-server.svg" alt="SQL Server" /> SQL Server
-                    </p>
-                    <p class="skill-logo-text">
-                        <img class="skill-logo" src="Images/firebase.svg" alt="Firebase" /> Firebase
-                    </p>
+                <div class ="entry">
+                    <div class="entry-name">
+                        <p class="company-project-name"><strong>Georgia Tech College of Computing</strong></p>
+                    </div>
+                    <div class="entry-info">
+                        <p class="title"><strong>Teaching Assistant</strong></p>
+                        <p><i class="fas fa-map-marker-alt entry-icon" ></i>
+                            Atlanta, GA</p>
+                        <p><i class="fas fa-clock entry-icon"></i>
+                            Jan 2024 - Present</p>
+                        <button class="show-more-button" onClick="displayText(this)">See More</button>
+                        <p class="show-more-text">
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="line-break"></div>
+        </div>
+    </section>
+
+    <section class="projects-section", id="projects">
+        <div class="projects-container">
+            <div class="projects-box">
+                <h2 class="projects-word">Projects</h2>
+            </div>
+            <div class="entries">
+                <div class ="entry">
+                    <div class="entry-name">
+                        <p class="company-project-name"><strong>Spotify Unwrapped</strong></p>
+                    </div>
+                    <div class="entry-info">
+                        <p class="title"><strong>Software Engineering Intern</strong></p>
+                        <p><i class="fas fa-map-marker-alt entry-icon" ></i>
+                            Bloomington, IL</p>
+                        <p><i class="fas fa-clock entry-icon"></i>
+                            Jun 2024 - Aug 2024</p>
+                        <button class="show-more-button" onClick="displayText(this)">See More</button>
+                        <p class="show-more-text">
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                        </p>
+                    </div>
+                </div>
+                <div class ="entry">
+                    <div class="entry-name">
+                        <p class="company-project-name"><strong>GBA Soccer</strong></p>
+                    </div>
+                    <div class="entry-info">
+                        <p class="title"><strong>Teaching Assistant</strong></p>
+                        <p><i class="fas fa-map-marker-alt entry-icon" ></i>
+                            Atlanta, GA</p>
+                        <p><i class="fas fa-clock entry-icon"></i>
+                            Jan 2024 - Present</p>
+                        <button class="show-more-button" onClick="displayText(this)">See More</button>
+                        <p class="show-more-text">
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder 
+                            Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="line-break"></div>
@@ -97,5 +194,4 @@
     </section>
 </body>
     
-
 </html>
