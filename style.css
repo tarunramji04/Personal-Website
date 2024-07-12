@@ -2,6 +2,7 @@
     --pale-blue: rgb(220, 237, 243);
     --dark-blue: rgb(17, 0, 254);
     --dark-orange: #EF8354;
+    --slightly-darker-oange: #e57a44;
 }
 
 html {
@@ -15,10 +16,26 @@ body {
 }
 
 h1 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 4px solid black;
+    white-space: nowrap;
+    animation: ltr 3s steps(38);
     font-size: 4rem;
-    text-align: center;
     color: var(--dark-blue);
-    animation: typing 1s forwards;
+}
+
+.name-wrapper {
+    text-align: center;
+}
+
+@keyframes ltr {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 12ch;
+    }
 }
 
 h2 {
@@ -202,7 +219,7 @@ h2 {
 }
 
 .show-more-button:hover {
-    background-color: #e57a44;
+    background-color: var(--slightly-darker-oange);
 }
 
 .show-more-text {
