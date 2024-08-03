@@ -1,10 +1,22 @@
+@media (max-width: 600px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 800px) {
-    .about-top, .skills-box {
+    .skills-box {
         flex-direction: column;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
+    .about-top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
     .entry {
         flex-direction: column;
     }
