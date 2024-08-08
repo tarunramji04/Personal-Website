@@ -231,12 +231,49 @@ button {
 }
 
 .show-more-text {
+    font-size: 1.1rem;
     display: none;
     transition: .25s ease;
+    margin-bottom: 0;
+}
+
+/* contact */
+.contact-section {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: inline-block;
 }
 
 .contact-icon {
-    color: black;
-    cursor: pointer;
-    height: 10rem;
+    height: 60px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.mail-icon {
+    height: 75px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.contact-header {
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;    
+}
+
+.github-link {
+    text-decoration: none;
 }

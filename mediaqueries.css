@@ -4,12 +4,6 @@
     }
 }
 
-@media (max-width: 800px) {
-    .skills-box {
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 950px) {
     .about-top {
         flex-direction: column;
