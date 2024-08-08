@@ -4,6 +4,13 @@
     }
 }
 
+@media (max-width: 400px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+
 @media (max-width: 950px) {
     .about-top {
         flex-direction: column;
